@@ -13,7 +13,7 @@
     "build-vendor:prod": "cross-env NODE_ENV=production webpack --config webpack.config.vendor.js --progress",
     "build-vendor:dev": "cross-env NODE_ENV=development webpack --config webpack.config.vendor.js --progress",
     "lint": "eslint -c ./.eslintrc.js ClientApp/**/*.js  ClientApp/**/*.vue  ClientApp/**/*.json webpack*.js",
-    "install": "npm run build-vendor:dev"
+    "init": "npm install && npm run build-vendor:dev"
   },
   "dependencies": {
     "axios": "^0.15.3",
